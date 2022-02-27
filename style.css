@@ -6,7 +6,7 @@
 body{
     font-family:'Times New Roman', Times, serif;
     font-size: 16px;
-    background-color: gray;
+    background-image: radial-gradient(circle at 24.88% 28.92%, #c0aba8 0, #a69f9e 12.5%, #8a9294 25%, #6c838c 37.5%, #497384 50%, #1d637e 62.5%, #005379 75%, #004574 87.5%, #003870 100%);;
 }
 
 a { 
@@ -80,6 +80,8 @@ nav{
 
 .imgBanner img{
     width: 100%;
+    animation-duration: 3s;
+    animation-name: imagen;
 }
 
 .infoBanner{
@@ -110,7 +112,9 @@ nav{
 .listaBanner{
     position: relative;
     left: 10%;
+    
 }
+
 
 .listaBanner ul{
     color: white;
@@ -131,6 +135,12 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform ease-out 1s;
+}
+
+.btnInfo:hover{
+   scale: 1.5;
+   background-color:#31403e;
 }
 
 .btnInfo p{
@@ -145,11 +155,6 @@ nav{
     padding: 3rem 0 ;
 }
 
-
-
-
-
-
 .boxServ{
     height: 20rem;
     border: 1px solid black;
@@ -158,7 +163,11 @@ nav{
     justify-content: space-around;
     align-items: center;
     color: white;
+    animation-duration: 2s;
+    animation-name: cartas;
+    animation-delay: 3s;
 }
+
 
 .boxServ h3{
     align-self: flex-start;
@@ -180,6 +189,11 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btnInfoServ:hover{
+ scale: 1.5;
+ background-color: #4f4f4f;
 }
 
 .btnInfoserv a{
@@ -209,6 +223,29 @@ nav{
     justify-content: center;
     column-gap: 5%;
 }
+
+@keyframes cartas {
+    from {
+    margin-left: 100%;
+    width: 500%
+    }
+
+    to {
+    width: 100%;
+    }
+}
+
+@keyframes imagen {
+    from {
+    opacity: 0%;
+    width: 300%;
+    }
+
+    to {
+    opacity: 100%;
+    }
+}
+
 
 @media (max-width: 850px) {
     nav{
@@ -256,7 +293,7 @@ nav{
         "b1"
         "b2" 
         "b3";
-        row-gap: 5%;display: inline-grid;       
+        row-gap: 5%;   
     }
 
 }
