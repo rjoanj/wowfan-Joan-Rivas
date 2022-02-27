@@ -42,6 +42,7 @@ nav{
 .menu li a{
     color: #1a261c;
 }
+/* transiciones */
 .menu li a:hover{
     color: #c0c3c4;
 }
@@ -138,6 +139,8 @@ nav{
     transition: transform ease-out 1s;
 }
 
+/* transiciones */
+
 .btnInfo:hover{
    scale: 1.5;
    background-color:#31403e;
@@ -190,7 +193,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
+/* transiciones */
 .btnInfoServ:hover{
  scale: 1.5;
  background-color: #4f4f4f;
@@ -223,7 +226,7 @@ nav{
     justify-content: center;
     column-gap: 5%;
 }
-
+/* animaciones */
 @keyframes cartas {
     from {
     margin-left: 100%;
@@ -246,7 +249,7 @@ nav{
     }
 }
 
-
+/* responsive */
 @media (max-width: 850px) {
     nav{
         grid-column: 1/13;
